@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digimovie</title>
+    <link rel="stylesheet" href="style/output.css">
+    <link rel="stylesheet" href="style/fontello.css">
+</head>
+
+<body onload="everyWordOnloadpage();">
+    <main class="bg-white dark:bg-[#050505] w-full  row justify-center">
+        <section class="row w-full lg:w-10/12 xl:w-8/12">
+            <div class=" w-full row justify-center h-[10vh] items-center">
+
+
+                <figure
+                    class="h-full row justify-center items-center w-6/12 order-2 md:w-4/12 md:order-3 lg:justify-end">
+                    <img src="img/logo-light.png" class="w-3/4 md:w-1/2 lg:w-8/12" alt="">
+                </figure>
+                <div class="flex justify-center gap-2 items-center  w-6/12 order-1 md:w-2/12 md:order-2">
+
+                    <div class="dark:bg-stone-800 border cursor-pointer dark:border-stone-800 rounded-3xl p-1 relative">
+                        <i class=" icon-moon text-amber-400 text-2xl cursor-pointer"></i>
+                        <i class="icon-sun text-amber-300 text-2xl cursor-pointer"></i>
+                        <span class="absolute w-8 h-8 bg-white  rounded-full top-1 left-1"></span>
+                    </div>
+
+                </div>
+                <div
+                    class="enterDashboard row justify-center items-center  order-3 mt-5 md:mt-0 md:w-6/12 md:order-1 lg:justify-start">
+                    <div
+                        class="flex justify-evenly dark:border dark:border-stone-800 rounded-3xl dark:bg-stone-800 p-3 cursor-pointer hover:bg-amber-500 duration-300">
+                        <a href="" class="dark:text-white text-sm">وارد شوید</a>
+                        <i class="icon-login dark:text-white"></i>
+                    </div>
+                    <div
+                        class="flex justify-evenly dark:border dark:border-stone-800 rounded-3xl dark:bg-stone-800 p-3 cursor-pointer hover:bg-amber-500 duration-300">
+                        <a href="" class="dark:text-white text-sm">ثبت نام</a>
+                        <i class=" icon-adult dark:text-white"></i>
+                    </div>
+                </div>
+
+                <!-- end /// -->
+            </div>
+
+        </section>
+
+        <div
+            class="row justify-center items-center w-full dark:bg-[rgba(94,92,92,0.65)]  h-[10vh] mt-[10vh] md:mt-0 md:h-[15vh] xl:h-[10vh]">
+            <section class="w-full lg:w-10/12 xl:w-8/12 h-full flex justify-center">
+                <header class=" row h-full  w-full row justify-between">
+                    <div class="flex  items-center cursor-pointer w-2/12 md:hidden">
+                        <i class="icon-menu text-2xl dark:bg-black dark:text-white rounded-lg p-2"></i>
+                    </div>
+                    <nav class="hidden md:flex md:w-full justify-center items-center xl:w-8/12">
+                        <ul class=" w-full h-full flex justify-evenly content-center">
+                            <div class="row justify-center content-center cursor-pointer">
+                                <div class="flex justify-center items-center p-1">
+                                    <i class="icon-home-outline text-2xl text-amber-500 duration-200"></i>
+                                </div>
+                                <div class="row justify-center items-center *:w-full">
+                                    <li class="text-white text-sm">خانه</li>
+                                    <li class="text-amber-500 uppercase font-extralight text-sm">home</li>
+                                </div>
+
+                            </div>
+                            <div class="row justify-center content-center cursor-pointer">
+                                <div class="flex justify-center items-center p-1">
+                                    <i class="icon-video text-2xl text-amber-500 duration-200"></i>
+                                </div>
+                                <div class="row justify-center items-center *:w-full">
+                                    <li class="text-white text-sm">دانلود فیلم</li>
+                                    <li class="text-amber-500 uppercase font-extralight text-sm">movies</li>
+                                </div>
+
+                            </div>
+                            <div class="row justify-center content-center cursor-pointer">
+                                <div class="flex justify-center items-center p-1">
+                                    <i class="icon-monitor text-2xl text-amber-500 duration-200"></i>
+                                </div>
+                                <div class="row justify-center items-center *:w-full">
+                                    <li class="text-white text-sm">دانلود سریال</li>
+                                    <li class="text-amber-500 uppercase font-extralight text-sm">series</li>
+                                </div>
+
+                            </div>
+                            <div class="row justify-center content-center cursor-pointer">
+                                <div class="flex justify-center items-center p-1">
+                                    <i class="icon-monitor text-2xl text-amber-500 duration-200"></i>
+                                </div>
+                                <div class="row justify-center items-center *:w-full">
+                                    <li class="text-white text-sm">هنرمندان</li>
+                                    <li class="text-amber-500 uppercase font-extralight text-sm">artists</li>
+                                </div>
+
+                            </div>
+                            <div class="row justify-center content-center cursor-pointer">
+                                <div class="flex justify-center items-center p-1">
+                                    <i class=" icon-laptop text-2xl text-green-500 duration-200"></i>
+                                </div>
+                                <div class="row justify-center items-center *:w-full">
+                                    <li class="text-white text-sm">اپلیکیشن</li>
+                                    <li class="text-green-500 uppercase font-extralight text-sm">app</li>
+                                </div>
+
+                            </div>
+                        </ul>
+                    </nav>
+                    <div class="flex justify-center items-center w-10/12 relative md:w-full xl:w-4/12">
+                        <div class=" w-full h-full row justify-center items-center">
+                            <input type="text"
+                                class=" rounded-3xl h-1/2 dark:bg-stone-950 w-full dark:text-stone-500 px-2 md:h-2/3 xl:h-1/2">
+                            <i class="icon-search text-amber-600 text-xl left-4 absolute text-extralight"></i>
+                        </div>
+
+                    </div>
+                </header>
+            </section>
+        </div>
+
+        <section class="w-full h-[70vh] ">
+            <div
+                class="wrapperOfSlider  flex justify-center items-center   w-full h-full perspective-[800px] **:rounded-xl duration-500">
+                <figure class="h-[40vh] w-[30vh] *:w-full *:h-full *:object-cover relative">
+                    <img src="img/1.jpg" class="brightness-75" alt="">
+                    <img src="img/less1.jpg" alt="">
+                    <div class="absolute w-full h-full top-0 left-0">
+                        <h6 class="absolute top-5 text-amber-500 left-5 uppercase text-xs"></h6>
+                        <h4 class="absolute bottom-12 left-5 text-amber-300 text-sm">10 / <span
+                                class="text-xl text-amber-300"></span></h4>
+                        <h2 class="absolute bottom-5 left-5 text-amber-50 capitalize text-xl font-bold tracking-wide">
+                        </h2>
+
+                    </div>
+
+
+
+                </figure>
+                <figure class="h-[40vh] w-[30vh] *:w-full *:h-full *:object-cover">
+                    <img src="img/2.2.jpg" class="brightness-75">
+                    <img src="img/less2.jpg" alt="">
+                    <div class="absolute w-full h-full top-0 left-0 hidden">
+                        <h6 class="absolute top-5 text-amber-500 left-5 uppercase text-xs"></h6>
+                        <h4 class="absolute bottom-12 left-5 text-amber-300 text-sm">10 / <span
+                                class="text-xl text-amber-300"></span></h4>
+                        <h2 class="absolute bottom-5 left-5 text-amber-50 capitalize text-xl font-bold tracking-wide">
+                        </h2>
+
+                    </div>
+                </figure>
+                <figure class="h-[40vh] w-[30vh] *:w-full *:h-full *:object-cover">
+                    <img src="img/3.jpg" alt="" class="brightness-75">
+                    <img src="img/less3.jpg" alt="">
+                    <div class="absolute w-full h-full top-0 left-0 hidden">
+                        <h6 class="absolute top-5 text-amber-500 left-5 uppercase text-xs"></h6>
+                        <h4 class="absolute bottom-12 left-5 text-amber-300 text-sm">10 / <span
+                                class="text-xl text-amber-300"></span></h4>
+                        <h2 class="absolute bottom-5 left-5 text-amber-50 capitalize text-xl font-bold tracking-wide">
+                        </h2>
+
+                    </div>
+                </figure>
+                <figure class="h-[40vh] w-[30vh] *:w-full *:h-full *:object-cover">
+                    <img src="img/4.jpg" alt="" class="brightness-75">
+                    <img src="img/less4.jpg" alt="">
+                    <div class="absolute w-full h-full top-0 left-0 hidden">
+                        <h6 class="absolute top-5 text-amber-500 left-5 uppercase text-xs"></h6>
+                        <h4 class="absolute bottom-12 left-5 text-amber-300 text-sm">10 / <span
+                                class="text-xl text-amber-300"></span></h4>
+                        <h2 class="absolute bottom-5 left-5 text-amber-50 capitalize text-xl font-bold tracking-wide">
+                        </h2>
+
+                    </div>
+                </figure>
+                <figure class="h-[40vh] w-[30vh] *:w-full *:h-full *:object-cover">
+                    <img src="img/5.jpg" alt="" class="brightness-75">
+                    <img src="img/less5.jpg" alt="">
+                    <div class="absolute w-full h-full top-0 left-0 hidden">
+                        <h6 class="absolute top-5 text-amber-500 left-5 uppercase text-xs"></h6>
+                        <h4 class="absolute bottom-12 left-5 text-amber-300 text-sm">10 / <span
+                                class="text-xl text-amber-300"></span></h4>
+                        <h2 class="absolute bottom-5 left-5 text-amber-50 capitalize text-xl font-bold tracking-wide">
+                        </h2>
+
+                    </div>
+                </figure>
+                <figure class="h-[40vh] w-[30vh] *:w-full *:h-full *:object-cover">
+                    <img src="img/6.jpg" alt="" class="brightness-75">
+                    <img src="img/less6.jpg" alt="">
+                    <div class="absolute w-full h-full top-0 left-0 hidden">
+                        <h6 class="absolute top-5 text-amber-500 left-5 uppercase text-xs"></h6>
+                        <h4 class="absolute bottom-12 left-5 text-amber-300 text-sm">10 / <span
+                                class="text-xl text-amber-300"></span></h4>
+                        <h2 class="absolute bottom-5 left-5 text-amber-50 capitalize text-xl font-bold tracking-wide">
+                        </h2>
+
+                    </div>
+                </figure>
+                <figure class="h-[40vh] w-[30vh] *:w-full *:h-full *:object-cover">
+                    <img src="img/7.jpg" alt="" class="brightness-75">
+                    <img src="img/less7.jpg" alt="">
+                    <div class="absolute w-full h-full top-0 left-0 hidden">
+                        <h6 class="absolute top-5 text-amber-500 left-5 uppercase text-xs"></h6>
+                        <h4 class="absolute bottom-12 left-5 text-amber-300 text-sm">10 / <span
+                                class="text-xl text-amber-300"></span></h4>
+                        <h2 class="absolute bottom-5 left-5 text-amber-50 capitalize text-xl font-bold tracking-wide">
+                        </h2>
+
+                    </div>
+                </figure>
+                <figure class="h-[40vh] w-[30vh] *:w-full *:h-full *:object-cover">
+                    <img src="img/8.jpg" alt="" class="brightness-75">
+                    <img src="img/less8.jpg" alt="">
+                    <div class="absolute w-full h-full top-0 left-0 hidden">
+                        <h6 class="absolute top-5 text-amber-500 left-5 uppercase text-xs"></h6>
+                        <h4 class="absolute bottom-12 left-5 text-amber-300 text-sm">10 / <span
+                                class="text-xl text-amber-300"></span></h4>
+                        <h2 class="absolute bottom-5 left-5 text-amber-50 capitalize text-xl font-bold tracking-wide">
+                        </h2>
+
+                    </div>
+                </figure>
+                <figure class="h-[40vh] w-[30vh] *:w-full *:h-full *:object-cover">
+                    <img src="img/9.jpg" alt="" class="brightness-75">
+                    <img src="img/less9.jpg" alt="">
+                    <div class="absolute w-full h-full top-0 left-0 hidden">
+                        <h6 class="absolute top-5 text-amber-500 left-5 uppercase text-xs"></h6>
+                        <h4 class="absolute bottom-12 left-5 text-amber-300 text-sm">10 / <span
+                                class="text-xl text-amber-300"></span></h4>
+                        <h2 class="absolute bottom-5 left-5 text-amber-50 capitalize text-xl font-bold tracking-wide">
+                        </h2>
+
+                    </div>
+                </figure>
+                <figure class="h-[40vh] w-[30vh] *:w-full *:h-full *:object-cover">
+                    <img src="img/10.jpg" alt="" class="brightness-75">
+                    <img src="img/less10.jpg" alt="">
+                    <div class="absolute w-full h-full top-0 left-0 hidden">
+                        <h6 class="absolute top-5 text-amber-500 left-5 uppercase text-xs"></h6>
+                        <h4 class="absolute bottom-12 left-5 text-amber-300 text-sm">10 / <span
+                                class="text-xl text-amber-300"></span></h4>
+                        <h2 class="absolute bottom-5 left-5 text-amber-50 capitalize text-xl font-bold tracking-wide">
+                        </h2>
+
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <section class=" w-full row justify-center items-center md:p-4">
+            <div
+                class="wrapperOfFilter w-11/12 h-full row justify-center content-start dark:bg-[#1c1c1c] lg:w-10/12 lg:p-7 xl:w-8/12 rounded-2xl p-2">
+                <div class=" w-full md:flex md:justify-center md:content-baseline">
+                    <div class=" md:w-3/12 md:flex md:justify-evenly md:items-center">
+                        <h5 class="w-full  text-center h-[5vh] dark:text-stone-400 my-3  text-sm">
+                            نوع</h5>
+                        <div
+                            class="flex justify-between items-center   w-full h-[5vh]  dark:bg-[#050505] rounded-2xl mb-7">
+                            <div
+                                class="px-4 rounded-2xl h-full flex justify-center items-center hover:bg-amber-600 cursor-pointer">
+                                <label for="film" class="dark:text-stone-400 text-sm">فیلم</label>
+                                <input type="radio" id="film" name="TypeOfMovie" value="film" hidden>
+                            </div>
+                            <div
+                                class="px-4 rounded-2xl h-full flex justify-center items-center hover:bg-amber-600 cursor-pointer">
+                                <label for="series" class="dark:text-stone-400 text-sm">سریال</label>
+                                <input type="radio" id="series" name="TypeOfMovie" value="series" hidden>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="w-full row justify-start content-center *:w-full mb-7 md:w-4/12 md:justify-center md:content-center">
+                        <h5
+                            class=" dark:text-stone-400 text-sm mb-2 md:mb-0 md:w-2/12 md:flex md:px-4 md:justify-end md:items-center">
+                            کارگردان</h5>
+                        <input type="text"
+                            class="w-full h-[5vh] dark:bg-[#050505] md:w-10/12 rounded-2xl placeholder-stone-600"
+                            placeholder="کریستوفر نولان">
+                    </div>
+                    <div
+                        class="w-full row justify-start content-center *:w-full mb-7 md:w-4/12 md:justify-center md:content-center">
+                        <h5
+                            class=" dark:text-stone-400 text-sm mb-2 md:mb-0 md:w-2/12 md:flex md:px-4 md:justify-end md:items-center">
+                            بازیگران</h5>
+                        <input type="text"
+                            class="w-full h-[5vh] dark:bg-[#050505] md:w-10/12 rounded-2xl placeholder-stone-600"
+                            placeholder="لئوناردو دی کاپریو">
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="dateOfProduct w-full row justify-start items-center *:w-full mb-7">
+                    <div class=" w-full row justify-between items-center h-[5vh]">
+                        <h5 class="dark:text-stone-400 text-sm mb-2">سال ساخت</h5>
+                        <div class="dark:text-stone-400 text-sm" id="showYears">
+                            <span></span>
+                            <span>-</span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="h-[1vh] dark:bg-[#050505] rounded-full relative duration-300" style="width: 100%;">
+                        <span
+                            class="flex w-[2vh] h-[2vh] -translate-y-1 rotate-45 cursor-grab bg-amber-600 absolute top-0 left-0 duration-75"></span>
+                        <span
+                            class="flex w-[2vh] h-[2vh] -translate-y-1 rotate-45 cursor-grab bg-amber-600 absolute top-0 left-[calc(100% - 1vh)] duration-75"></span>
+                    </div>
+
+                </div>
+                <div class=" w-full row justify-evenly items-center-center *:md:w-4/12">
+                    <div
+                        class="w-full row justify-start content-center *:w-full mb-7 md:flex md:justify-start md:content-center">
+                        <h5
+                            class=" dark:text-stone-400 text-sm mb-2 md:w-2/12 md:text-center flex items-center justify-center">
+                            کشور</h5>
+
+                        <select name="countries" id="countries"
+                            class="w-full h-[5vh] dark:bg-[#050505] dark:text-stone-400 rounded-2xl placeholder-stone-600 md:w-10/12">
+                            <option value="all">همه</option>
+                        </select>
+                    </div>
+                    <div
+                        class="w-full row justify-start content-center *:w-full mb-7 md:flex md:justify-start md:content-center">
+                        <h5
+                            class=" dark:text-stone-400 text-sm mb-2 md:w-2/12 md:text-center flex items-center justify-center">
+                            رده سنی</h5>
+
+                        <select name="rangeOfAge" id="rangeOfAge"
+                            class="w-full h-[5vh] dark:bg-[#050505] dark:text-stone-400 rounded-2xl placeholder-stone-600 md:w-10/12">
+                            <option value="all">همه</option>
+                        </select>
+                    </div>
+
+                    <div
+                        class="w-full row justify-start content-center *:w-full mb-7 md:flex md:justify-start md:content-center">
+                        <h5
+                            class="  dark:text-stone-400 text-sm mb-2 md:w-2/12 md:text-center flex items-center justify-center">
+                            ژانر</h5>
+
+                        <select name="genre" id="genre"
+                            class="w-full h-[5vh] dark:bg-[#050505] dark:text-stone-400 rounded-2xl placeholder-stone-600 md:w-10/12">
+                            <option value="all">همه</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <div class="points w-full row justify-start items-center *:w-full mb-7">
+                    <div class=" w-full row justify-between items-center h-[5vh]">
+                        <h5 class="dark:text-stone-400 text-sm mb-2">امتیاز</h5>
+                        <div class="dark:text-stone-400 text-sm" id="points">
+                            <span></span>
+                            <span>-</span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="h-[1vh] dark:bg-[#050505] rounded-full relative duration-300" style="width: 100%;">
+                        <span
+                            class="flex w-[2vh] h-[2vh] -translate-y-1 rotate-45 cursor-grab bg-amber-600 absolute top-0 left-0 duration-75"></span>
+                        <span
+                            class="flex w-[2vh] h-[2vh] -translate-y-1 rotate-45 cursor-grab bg-amber-600 absolute top-0 left-[calc(100% - 1vh)] duration-75"></span>
+                    </div>
+
+                </div>
+
+                <div class="  w-full row justify-evenly items-center-center *:md:w-4/12">
+                    <div
+                        class="w-full row justify-start content-center *:w-full mb-7 md:flex md:justify-start md:content-center">
+                        <h5
+                            class="dark:text-stone-400 text-sm mb-2 md:w-2/12 md:text-center flex items-center justify-center">
+                            کیفیت</h5>
+
+                        <select name="quality" id="quality"
+                            class="w-full h-[5vh] dark:bg-[#050505] dark:text-stone-400 rounded-2xl placeholder-stone-600 md:w-10/12">
+                            <option value="all">همه</option>
+                        </select>
+                    </div>
+                    <div
+                        class="w-full row justify-start content-center *:w-full mb-7 md:flex md:justify-start md:content-center">
+                        <h5
+                            class="dark:text-stone-400 text-sm mb-2 md:w-2/12 md:text-center flex items-center justify-center">
+                            شبکه</h5>
+
+                        <select name="network" id="network"
+                            class="w-full h-[5vh] dark:bg-[#050505] dark:text-stone-400 rounded-2xl placeholder-stone-600 md:w-10/12">
+                            <option value="all">همه</option>
+                        </select>
+                    </div>
+                    <div
+                        class="w-full row justify-start content-center *:w-full mb-7 md:flex md:justify-start md:content-center">
+                        <h5
+                            class="dark:text-stone-400 text-sm mb-2 md:w-2/12 md:text-center flex items-center justify-center">
+                            ترتیب</h5>
+
+                        <select name="order" id="order"
+                            class="w-full h-[5vh] dark:bg-[#050505] dark:text-stone-400 rounded-2xl placeholder-stone-600 md:w-10/12">
+                            <option value="all">همه</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <div class="allTogglesHere">
+                    <!-- dubles toggle -->
+                    <label class="inline-flex items-center me-5 cursor-pointer">
+                        <input type="checkbox" value="non-doubled" class="sr-only peer">
+                        <div
+                            class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-amber-600 dark:peer-focus:ring-amber-600 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-amber-600 dark:peer-checked:bg-amber-600">
+                        </div>
+                        <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">دوبله فارسی</span>
+                    </label>
+                    <!-- dubles toggle -->
+                    <!-- Censorship toggle -->
+                    <label class="inline-flex items-center me-5 cursor-pointer">
+                        <input type="checkbox" value="Censorship" class="sr-only peer">
+                        <div
+                            class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-amber-600 dark:peer-focus:ring-amber-600 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-amber-600 dark:peer-checked:bg-amber-600">
+                        </div>
+                        <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">سانسور شده</span>
+                    </label>
+                    <!-- Censorship toggle -->
+                    <!-- Censorship toggle -->
+                    <label class="inline-flex items-center me-5 cursor-pointer">
+                        <input type="checkbox" value="subTitle" class="sr-only peer">
+                        <div
+                            class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-amber-600 dark:peer-focus:ring-amber-600 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-amber-600 dark:peer-checked:bg-amber-600">
+                        </div>
+                        <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">زیرنویس</span>
+                    </label>
+                    <!-- Censorship toggle -->
+                    <!-- live watching toggle -->
+                    <label class="inline-flex items-center me-5 cursor-pointer">
+                        <input type="checkbox" value="subTitle" class="sr-only peer">
+                        <div
+                            class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-amber-600 dark:peer-focus:ring-amber-600 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-amber-600 dark:peer-checked:bg-amber-600">
+                        </div>
+                        <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">پخش آنلاین</span>
+                    </label>
+                    <!-- live watching toggle -->
+                    <button
+                        class="w-full my-3 bg-amber-600 hover:bg-amber-300 cursor-pointer text-white font-bold py-2 px-4 rounded-full">
+                        جستجو
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class=" w-full row justify-center items-center mt-4 ">
+            <div class="  row w-11/12 lg:w-8/12 xl:w-12/12 justify-center content-center">
+           
+                <div class="  lg:w-8/12 order-1 lg:order-2" id="wrapperOfShowMovies">
+          
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="js/slider.js"></script>
+    <script src="js/dateOfProduct.js"></script>
+    <script src="js/countries.js"></script>
+    <script src="js/rangeOfAge.js"></script>
+    <script src="js/genre.js"></script>
+    <script src="js/qualityOfMovies.js"></script>
+    <script src="js/network.js"></script>
+    <script src="js/order.js"></script>
+    <script src="js/showMovies.js"></script>
+</body>
+
+</html>

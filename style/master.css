@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../Vazir.eot');
+    src: url('../Vazir.eot?#iefix') format('embedded-opentype'),
+        url('../Vazir.woff2') format('woff2'),
+        url('../Vazir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Vazir';
+}
+
+@layer base {
+    .row {
+        @apply flex flex-wrap
+    }
+}
+
+@layer components {}
+
+@layer utilities {}
+
+@layer theme {}
+
+@keyframes movement {
+    from {
+        transform: translateX(0vh);
+    }
+
+    to {
+        transform: translateX(30vh);
+    }
+}
+
+.bg-custom-gradient {
+    background: #9e9e9e;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.603) 20%, rgba(230, 230, 230, 0.055) 80%);
+}
