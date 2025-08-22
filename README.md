@@ -1,6 +1,6 @@
 # digimovies  🔥🔥
 
-** Hi , Im Milad and I line to share my movies website that created by tailwind and pure javascript and also i create custom API with javascript and use loop to create some Html Element for showing DATA  **
+** Hi , Im Milad and I like to share my movies website that created by tailwind and pure javascript and also i create custom API with javascript and use loop to create some Html Element for showing DATA  **
 
 <img width="1883" height="905" alt="Image" src="https://github.com/user-attachments/assets/95844ffa-0280-4ed9-9725-489b3b0ae11f" />
 
